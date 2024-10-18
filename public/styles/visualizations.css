@@ -1,0 +1,35 @@
+/* Resetting default styles and setting a white background */
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+    background-color: white; 
+    text-align: center; 
+}
+
+/* Styling for the navigation bar */
+nav {
+    background-color: black; 
+    overflow: hidden;
+}
+
+/* Styling for navigation links */
+nav a {
+    float: left; /* Floating the navigation links to the left */
+    display: block; 
+    color: white; 
+    text-align: center;
+    padding: 14px 16px; 
+    text-decoration: none; 
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    background-color: #ddd; 
+    color: blue; /* Changing text color on hover */
+}
+/* Setting height of line graph */
+div#expense-chart{
+    height:90vh;
+}
+

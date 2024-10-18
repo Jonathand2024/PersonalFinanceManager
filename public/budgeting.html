@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="styles/budgeting.css"> 
+    
+    <!-- JavaScript link -->
+    <script src="javascript/budgeting.js"></script>
+    
+    <!-- Page title -->
+    <title>Budgeting System</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Back to Homepage</a>
+    </nav>
+    
+    <!-- Main content -->
+    <main>
+        <!-- Page heading -->
+        <h2>Budgeting System</h2>
+        
+        <!-- Budget form -->
+        <form id="budgetForm">
+            <!-- Weekly budget input -->
+            <label for="weeklyBudget">Set Weekly Budget (US $):</label>
+            <input type="number" id="weeklyBudget" placeholder="Enter amount" required>
+            
+            <!-- Monthly budget input -->
+            <label for="monthlyBudget">Set Monthly Budget (US $):</label>
+            <input type="number" id="monthlyBudget" placeholder="Enter amount" required>
+            
+            <!-- Save Budget button with event handlers -->
+            <button type="button" onclick="handleBudgetForm()" onmousedown="buttonClick()" onmouseup="buttonRelease()">Save Budget</button>
+        </form>
+    </main>
+</body>
+</html>

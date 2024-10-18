@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="styles/userans.css"> 
+    <!-- JavaScript link -->
+    <script src="javascript/userans.js" defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Back to Homepage</a>
+        <a href="user.html">Back to Expense Log</a>
+        <a href="visualizations.html">Categorial Expense Visualization</a>
+        <a href="visualizations2.html">Daily Expense Visualization</a>
+        <a href="breakdown.html">Category Expense Breakdown</a>
+    </nav>
+    <!-- Expense Table -->
+    <h2>Expense Table</h2>
+    <table border="1" id="dataTable">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+    </table>
+    <!-- Categorical Percentages Table -->
+    <table border="1" id="percentages">
+        <thead>
+            <tr>
+                <th>Total</th>
+                <th>Food Percentage</th>
+                <th>Entertainment Percentage</th>
+                <th>Housing Percentage</th>
+                <th>Transportation Percentage</th>
+                <th>Utilities Percentage</th>
+                <th>Other Percentage</th>
+            </tr>
+        </thead>
+    </table>
+    <!-- Average Amount Table -->
+    <table border="1" id="avgamount">
+        <thead>
+            <tr>
+                <th>Average amount spent per day</th>
+                <th>Average amount spent per week</th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>

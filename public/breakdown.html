@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet link -->
+    <link rel="stylesheet" href="styles/breakdown.css"> 
+    <!-- Include Plotly library script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <!-- JavaScript link -->
+    <script src="javascript/breakdown.js"></script>
+    <!-- Page title -->
+    <title>User Expense Categorical Breakdown</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Back to Homepage</a>
+        <a href="user.html">Back to Expense Log</a>
+    </nav>
+    <!--Header Title -->
+    <h1 id="title">User Categorical Expense Breakdown</h1>
+    <!-- Pie Chart graphing user category expense percentages -->
+    <div id="userChart">
+        User Categorical Expense Percentages Based on US $ Amount
+        <canvas id="PieChart"></canvas>
+    </div>
+    <!--Pie Chart graphing average american annual user expense categorial percentages 2022-->
+    <div id="averageChart">
+        Average American Annual User Expense Categorical Percentages 2022 Based on US $ Amount (Per US Bureau of Labor Statistics)
+        <canvas id="PieChart2"></canvas>
+    </div>
+    <!-- Form -->
+    <div id="container">
+        <form>
+            Estimated Monthly Income in US $ :
+            <!-- Number Input -->
+            <input type="number" id="input">
+            <!-- Submit Button -->
+            <input type="button" id="S" value="Submit" onclick="sub()">
+            <!-- Reset Button -->
+            <input type="button" id="R" value="Reset" onclick="res()">
+        </form>
+    </div>
+    <!-- Bar Chart graphing profit and user expense per month -->
+    <div id="bar">
+        <canvas id="BarChart"></canvas>
+    </div>
+    <!-- Div displaying average profit per month user generates -->
+    <div id="profit"></div>
+</body>
+</html>
